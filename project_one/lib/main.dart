@@ -23,8 +23,24 @@ class MainApp extends StatelessWidget {
             //decoration use pana moothu box color nu sepearate ah container la poda mudiathu so we define colour inside borderradius
             decoration: BoxDecoration
             (borderRadius: BorderRadius.circular(10), color:Colors.blue),
-            alignment: Alignment.center,
-            child: Text('Hello world'),
+            
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+              Container(
+              decoration: BoxDecoration
+            (borderRadius: BorderRadius.circular(10), color:Colors.red),
+            padding:EdgeInsets.all(10),
+              child: Text('Hello world'),
+            ),
+            Container(
+              decoration: BoxDecoration
+            (borderRadius: BorderRadius.circular(10), color:Colors.red),
+            padding:EdgeInsets.all(10),
+              child: Text('Hello world'),
+            ),
+            ],)
           ),
         ),
       ),
